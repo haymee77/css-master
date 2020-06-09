@@ -1,0 +1,23 @@
+.grid {
+  color: white;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(auto-fill, minmax(20px, max-content));
+  grid-auto-rows: 30px;
+}
+
+.item:nth-child(odd) {
+  background-color: #3498db;
+}
+
+.item:nth-child(even) {
+  background-color: #2ecc71;
+}
+
+.nav {
+  background-color: #f1c40f;
+}
+
+.footer {
+  background-color: #f39c12;
+}

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body-wrapper {
+  display: grid;
+  grid-template-columns: auto 400px;
+  grid-template-rows: 100px 500px 50px;
+  grid-template-areas:
+    'top top'
+    'map list'
+    'footer footer';
+}
+
+.top-wrapper {
+  grid-area: top;
+  background-color: #2980b9;
+}
+.map-wrapper {
+  grid-area: map;
+  background-color: #ecf0f1;
+}
+.list-wrapper {
+  grid-area: list;
+  background-color: #f1c40f;
+}
+.footer-wrapper {
+  grid-area: footer;
+  background-color: #34495e;
+}
