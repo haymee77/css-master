@@ -1,1 +1,1 @@
-body{background:#e7473c}.box{margin-top:20px}.box:hover{background-color:green}.box h2{color:#fff}.box button{color:#e7473c}.box button:hover{background-color:#000}
+a,button{border-radius:5px;background-color:peru;padding:5px 10px;font-size:15px;color:#fff;text-transform:uppercase;font-weight:500}a{text-decoration:none}button{border:0}

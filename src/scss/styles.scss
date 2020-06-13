@@ -1,21 +1,12 @@
 @import '_variables';
+@import '_mixins';
+@import '_button';
 
-body {
-  background: $bg;
+a {
+  @extend %button;
+  text-decoration: none;
 }
-
-.box {
-  margin-top: 20px;
-  &:hover {
-    background-color: green;
-  }
-  h2 {
-    color: white;
-  }
-  button {
-    color: $bg;
-    &:hover {
-      background-color: black;
-    }
-  }
+button {
+  @extend %button;
+  border: none;
 }
