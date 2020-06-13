@@ -1,0 +1,40 @@
+{
+  "name": "css-master",
+  "version": "1.0.0",
+  "description": "Practice CSS Master class(Nomadcoder Academy)",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haymee77/css-master.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "flexbox",
+    "grid"
+  ],
+  "author": "Haymee Mackenzie Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haymee77/css-master/issues"
+  },
+  "homepage": "https://github.com/haymee77/css-master#readme",
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "browserslist": {
+    "browsers": [
+      "last 2 versions"
+    ]
+  }
+}
