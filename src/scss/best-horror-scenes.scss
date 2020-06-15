@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: RingsideExtraWide-Book, Blank, Helvetica Neue, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.side {
+  position: fixed;
+  width: 35%;
+  padding: 40px;
+}
+
+.side h1 {
+  margin: 0;
+  font-size: 72px;
+  color: #e7473c;
+  font-weight: 300;
+  line-height: 1em;
+}
+
+.side .subtitle {
+  margin-top: 150px;
+  padding-right: 100px;
+  color: #e7473c;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.side .description {
+  font-size: 17px;
+  color: #e7473c;
+}
+
+.side .footer a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  padding-bottom: 2px;
+  line-height: 2rem;
+}
+
+.content {
+  width: 65%;
+  height: auto;
+  margin-left: 35%;
+  padding: 0;
+}
+
+.content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.content ul li {
+  list-style: none;
+  color: white;
+  padding: 70px;
+  background-color: #e7473c;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.08), transparent);
+}
+
+.content ul .li-top {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.content ul .li-top .movie-title {
+  font-size: 30px;
+}
+
+.content ul .li-top .movie-director {
+  font-size: 20px;
+  align-self: flex-end;
+}
+
+.content ul .li-movie {
+  padding: 20px 0;
+}
+
+.content ul .li-bottom {
+  text-align: right;
+}
