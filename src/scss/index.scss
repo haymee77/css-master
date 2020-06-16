@@ -58,6 +58,13 @@ main {
         font-size: 0.8rem;
       }
     }
+    h3 {
+      border-bottom: 1px solid $color-point;
+      padding-bottom: 5px;
+      font-size: 2rem;
+      color: $color-point;
+      margin-top: 3vh;
+    }
   }
   .main__wrapper {
     display: flex;

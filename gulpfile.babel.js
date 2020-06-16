@@ -24,10 +24,16 @@ const routes = {
     dest: 'dist/',
     del: 'dist/*.html',
   },
+  js: {
+    src: 'src/js/*',
+    dest: 'dist/js',
+    del: 'dist/js/*',
+  },
 };
-const clean = () => del([routes.css.del, routes.html.del]);
+const clean = () => del([routes.css.del, routes.html.del, routes.js.del]);
 const html = () => gulp.src(routes.html.src).pipe(gulp.dest(routes.html.dest));
 const img = () => gulp.src(routes.img.src).pipe(gulp.dest(routes.img.dest));
+const js = () => gulp.src(routes.js.src).pipe(gulp.dest(routes.js.dest));
 
 const styles = () =>
   gulp
@@ -41,6 +47,7 @@ const watch = () => {
   gulp.watch(routes.css.watch, styles);
   gulp.watch(routes.html.src, html);
   gulp.watch(routes.img.src, img);
+  gulp.watch(routes.js.src, js);
 };
 
 const ghPages = () => gulp.src('dist/**/*').pipe(gPages());
@@ -53,7 +60,7 @@ const webserver = () =>
   );
 
 const prepare = gulp.series([clean]);
-const assets = gulp.series([html, styles, img]);
+const assets = gulp.series([html, styles, img, js]);
 const live = gulp.series([webserver, watch]);
 
 const build = gulp.series([prepare, assets]);
