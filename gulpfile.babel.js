@@ -11,7 +11,7 @@ sass.compiler = require('node-sass');
 const routes = {
   css: {
     watch: 'src/scss/*',
-    src: ['src/scss/index.scss', 'src/scss/best-horror-scenes.scss'],
+    src: ['src/scss/[^_]*'],
     dest: 'dist/css',
     del: 'dist/css/*',
   },

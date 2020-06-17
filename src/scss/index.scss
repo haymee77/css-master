@@ -68,9 +68,30 @@ main {
   }
   .main__wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    .practice_wrapper {
+      padding: 20px;
+      background-color: $color-point-light;
+      margin-bottom: 20px;
+      .grid-part {
+        h1 {
+          font-size: 1.2rem;
+          color: rgba(0, 0, 0, 0.6);
+          margin-bottom: 20px;
+        }
+        ul li {
+          list-style: none;
+          margin-bottom: 20px;
+          padding-bottom: 4px;
+          border-bottom: 0.1rem solid $color-point-second-light;
+          a {
+            color: $color-point-second;
+            text-decoration: none;
+          }
+        }
+      }
+    }
     .portfolio_wrapper {
       display: flex;
       flex-direction: column;
