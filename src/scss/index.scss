@@ -74,7 +74,10 @@ main {
   }
   .main__wrapper {
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 49% 49%;
+    @media screen and (max-width: $breakpoint-tablet) {
+      grid-template-columns: 100%;
+    }
     gap: 2%;
     width: 100%;
     padding: 20px;
