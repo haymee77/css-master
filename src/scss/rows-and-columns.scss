@@ -24,15 +24,23 @@ header {
       padding: 10px;
     }
     .content {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
       background-color: $color-point-second;
       padding: 10px;
     }
     .nav {
+      grid-row-start: 2;
+      grid-row-end: 4;
       background-color: $color-point-light;
       color: $color-point;
       padding: 10px;
     }
     .footer {
+      grid-column-start: 1;
+      grid-column-end: 5;
       background-color: $color-main;
       color: $color-bg;
       padding: 10px;
